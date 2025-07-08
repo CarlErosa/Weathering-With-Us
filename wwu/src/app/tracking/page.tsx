@@ -70,7 +70,7 @@ const Tracking = () => {
     <div className={styles.SubtitleContainer}>
         <h4 className={styles.Subtitle}>Track Fast, Track Now</h4>
     </div>
-    <div>
+    <div className={styles.SearchContainer}>
         <Input 
             type="text" 
             placeholder="Enter location or city name..." 
