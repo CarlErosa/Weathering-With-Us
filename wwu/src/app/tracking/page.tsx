@@ -1,15 +1,12 @@
 "use client";
 
-import Image from "next/image";
 import styles from "./tracking.module.css";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { useRouter } from "next/navigation";
 import { useState, useEffect } from "react";
 import { weatherService, WeatherData } from "@/lib/weather-service";
 
-const tracking = () => {
-    const router = useRouter();
+const Tracking = () => {
     const [searchTerm, setSearchTerm] = useState("");
     const [weatherData, setWeatherData] = useState<WeatherData | null>(null);
     const [loading, setLoading] = useState(false);
@@ -126,7 +123,7 @@ const tracking = () => {
                         </div>
                         <div className={styles.WeatherDetail}>
                             <div className={styles.WeatherDetailLabel}>Pressure</div>
-                            <div className={styles.WeatherDetailValue}>{weatherData.current.pressure}"</div>
+                            <div className={styles.WeatherDetailValue}>{weatherData.current.pressure}&quot;</div>
                         </div>
                         <div className={styles.WeatherDetail}>
                             <div className={styles.WeatherDetailLabel}>Feels Like</div>
@@ -144,4 +141,4 @@ const tracking = () => {
     );
 }
 
-export default tracking;
+export default Tracking;
