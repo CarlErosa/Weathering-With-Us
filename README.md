@@ -8,4 +8,3 @@ Check out the deployed app here: [Weathering-With-Us Web App](https://weathering
 
 ---
 
-![image1](image1)
